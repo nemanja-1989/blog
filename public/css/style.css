@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", "Raleway";
+    color: rgb(107, 16, 10);
+}
+p{
+    margin: 7px;
+}
+#nav{
+    background: rgba(235, 64, 52);
+    color: #fff;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#flex-nav{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar{
+    margin-right: auto;
+    margin-left: 30px;
+}
+#navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navbar ul li{
+    float: left;
+    position: relative;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    height: 20px;
+    padding: 10px 20px;
+}
+#my-account{
+    margin-left: auto;
+}
+#my-account ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#my-account ul li{
+    float: left;
+    position: relative;
+}
+#my-account ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    height: 20px;
+    padding: 10px;
+}
+#my-account ul li ul{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background: rgba(235, 64, 52, .8);
+    top: 100%;
+    left: 0;
+}
+#my-account ul li ul li{
+    float: none;
+}
+#my-account ul li:hover ul{
+    display: block;
+}
+#footer{
+    background: rgba(235, 64, 52);
+    height: 300px;
+}
+#footer #copyright{
+    color: #fff;
+    font-family: "Lato";
+    text-align: center;
+}
+#wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "main"; 
+}
+#main{grid-area: main;}
+#main{
+    min-height: 600px;
+}
+/*
+#wrapper > *{
+    border: 1px solid grey;
+    padding: 10px;
+}
+*/
+.form form{
+    width: 500px;
+}
+.form form input{
+    width: 100%;
+    border: none;
+    height: 30px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 5px;
+}
+.form form label{
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.form form input[type="submit"]{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background: rgba(107, 16, 10);
+    color: #fff;
+    outline: none;
+}
+.form form select{
+    display: block;
+    height: 20px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+.form form textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    outline: none;
+    max-height: 200px;
+    min-height: 100px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid lightgrey;
+}
+#footer{
+    margin-top: 30px;
+}
+.empty-db p{
+    margin-top: 30px;
+}
+.create{
+    border: none;
+    border-radius: 5px;
+    background: rgba(145, 224, 61);
+}
+.create a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 5px;
+}
+.view{
+    border: none;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid lightgrey;
+}
+.view a{
+    text-decoration: none;
+    color: rgb(107, 16, 10);
+    display: block;
+    padding: 5px 5px;
+}
+.edit{
+    border: none;
+    border-radius: 5px;
+    background: rgba(61, 151, 224);
+    border: 1px solid lightgrey;
+}
+.edit a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 5px;
+}
+.delete{
+    border: none;
+    border-radius: 5px;
+    background: rgb(224, 61, 61);
+    border: 1px solid lightgrey;
+}
+.delete a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 5px;
+}
+.session{
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 5px;
+    color: rgba(145, 224, 61);
+    background:  rgb(216, 255, 173);
+}
+.back-button{
+    border: none;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid lightgrey;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.back-button a{
+    display: block;
+    text-decoration: none;
+    color: rgb(107, 16, 10);
+    padding: 10px 20px;
+}
+.paginate{
+    margin-top: 50px;
+}
+.paginate ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 500px;
+}
+.paginate ul li{
+    float: left;
+}
+.paginate ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid  rgba(235, 64, 52);
+    color:  rgba(235, 64, 52);
+    border-radius: 5px;
+}
+.paginate .active{
+    display: block;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid  rgba(235, 64, 52);
+    color:  #fff;
+    border-radius: 5px;
+    background: rgba(235, 64, 52);
+}
+.paginate .disabled{
+    display: block;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid  rgba(235, 64, 52);
+    color:  #fff;
+    border-radius: 5px;
+    background: rgba(235, 64, 52);
+}
+.clear{
+    clear: both;
+}
+.tags{
+    background: rgb(107, 16, 10);
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 3px;
+    color: #fff;
+    margin-right: 3px;
+}
